@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+    <h2>Завдання 1</h2>
+    <a href="index.html">🔙 Повернутися до меню</a>
+    <script>
+        let surname = prompt("Введіть ваше прізвище:", "");
+        let name = prompt("Введіть ваше ім'я:", "");
+        let patronymic = prompt("Введіть по-батькові:", "");
+
+        if (surname && name && patronymic) {
+            let isCorrect = confirm(`Ваші дані: ${surname} ${name} ${patronymic}\nВсе вірно?`);
+            if (isCorrect) {
+                alert(`Добрий день, ${surname} ${name} ${patronymic}!`);
+            } else {
+                alert("Помилка: Дані не підтверджено.");
+            }
+        } else {
+            alert("Помилка: Ви ввели не всі дані.");
+        }
+    </script>
+</body>
+</html>
